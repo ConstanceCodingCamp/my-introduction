@@ -13,6 +13,18 @@
   })();
 </script>
 
+<script>
+function openNav() {
+  document.getElementById("myMenu").style.width = "250px";
+  document.getElementById("menu").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("myMenu").style.width = "0";
+  document.getElementById("menu").style.marginLeft= "0";
+}
+</script>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +42,7 @@
 </head>
 
 <center>
-
   <body>
-
    <div id="myMenu" class="slideout">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="index.html" class="active">Home</a>
@@ -41,7 +51,7 @@
         <a href="mailto:fstechwriter@gmail.com"> Contact</a>
    </div>
 
-   <div id="main">
+   <div id="menu">
       <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
    </div>
 
